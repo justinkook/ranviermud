@@ -10,7 +10,8 @@
   },
   "license": "MIT",
   "scripts": {
-    "start": "node ./ranvier -v",
+    "start": "ts-node src/main.ts",
+    "server": "node ./ranvier -v",
     "init": "node ./util/init-bundles.js",
     "update-bundle-remote": "node ./util/update-bundle-url.js",
     "remove-bundle": "node ./util/remove-bundle.js",
@@ -28,6 +29,8 @@
     "winston": "^2.4.4"
   },
   "devDependencies": {
-    "git-url-parse": "^11.1.2"
+    "git-url-parse": "^11.1.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
   }
 }
