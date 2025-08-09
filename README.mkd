@@ -1,6 +1,6 @@
 <p align="center"><img class="readme-logo" src="https://raw.githubusercontent.com/RanvierMUD/docs/master/resources/logo.png"></p>
 
-# ranvier
+# ranvier with ai
 
 ## Node.js-based MUD engine
 
@@ -8,18 +8,18 @@ Ranvier is a [MUD](https://en.wikipedia.org/wiki/MUD) game engine whose goal is 
 
 ## Special Features
 
-* Robust bundle system: Nearly every aspect of the game can be modified without changing the core and allows for easy
+- Robust bundle system: Nearly every aspect of the game can be modified without changing the core and allows for easy
   packaging and sharing of commands/areas/items/npcs/channels/behaviors
-* Unopinionated network layer: easily swap out telnet for any network layer you like. No need to gut the whole codebase
+- Unopinionated network layer: easily swap out telnet for any network layer you like. No need to gut the whole codebase
   just to support a different transport type, just drop in a file.
-* Customizable data layer: You are not tied to saving in any particular database or file storage sytem
-* Optional coordinate based room system allowing for the flexibilty of a standard MUD world with the easy mappability of
+- Customizable data layer: You are not tied to saving in any particular database or file storage sytem
+- Optional coordinate based room system allowing for the flexibilty of a standard MUD world with the easy mappability of
   a strict 3D world.
-* Scripting for all entities in the game for any event along with behaviors to create shared, composable scripts
-* Skill system with passive/active skills
-* Effects e.g., buffs/debuffs
-* Quest system allowing for starting/progress/completion from any event in the game
-* Communication channels with custom audiences
+- Scripting for all entities in the game for any event along with behaviors to create shared, composable scripts
+- Skill system with passive/active skills
+- Effects e.g., buffs/debuffs
+- Quest system allowing for starting/progress/completion from any event in the game
+- Communication channels with custom audiences
 
 ## Documentation
 
@@ -33,7 +33,7 @@ We have a Slack channel you can use to ask questions, suggest features, or just 
 
 ## Requirements
 
-* [Node.js](https://nodejs.org) >= v10.12.0
+- [Node.js](https://nodejs.org) >= v10.12.0
 
 ## Demo
 
