@@ -1,0 +1,5 @@
+{"t":"2025-08-09T06:32:16.168Z","type":"command","text":"look"}
+{"t":"2025-08-09T06:32:16.168Z","type":"narration","text":"You are in a room."}
+{"t":"2025-08-09T06:32:16.168Z","type":"chapter_break","text":"---"}
+{"t":"2025-08-09T06:32:16.168Z","type":"command","text":"north"}
+{"t":"2025-08-09T06:32:16.168Z","type":"narration","text":"A corridor stretches ahead."}

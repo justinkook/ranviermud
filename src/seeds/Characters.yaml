@@ -1,0 +1,170 @@
+# Origin Companions (party members)
+- id: astarion
+  keywords: ["astarion", "vampire", "elf", "rogue"]
+  name: "Astarion"
+  description: |
+    A pale, handsome High Elf with a sly smile and sharp fangs. Once a magistrate turned vampire spawn, Astarion was enslaved by the cruel Cazador Szarr for two centuries, forced to do unspeakable deeds in the night [oai_citation:22‡bg3.wiki](https://bg3.wiki/wiki/Astarion#:~:text=A%20vampire%20spawn%20previously%20under,free%2C%20no%20matter%20the%20consequences). The nautiloid’s crash freed him, and now he revels in newfound autonomy. Debonair and manipulative, he cloaks trauma under wit and charm, seeking revenge against his former master and a life where he’ll never be subjugated again.
+  level: 3
+  attributes:
+    health: 100
+    mana: 50
+  items: ["emerald_grove:astarions_grimoire"] # Placeholder for any personal item (e.g., his diary or a unique dagger)
+  quests: ["baldurs_gate:the_pale_elf"] # Questline for Astarion's personal story (exacting revenge on Cazador)
+- id: gale
+  keywords: ["gale", "human", "wizard", "orb"]
+  name: "Gale"
+  description: |
+    A tall human wizard from Waterdeep, with an affable demeanor and an insatiable hunger for knowledge. Gale once tried to impress the goddess Mystra by absorbing an ancient Netherese spell, which backfired – he now carries a volatile **Netherese orb** in his chest that could annihilate him (and others) if not kept under control [oai_citation:23‡reddit.com](https://www.reddit.com/r/BaldursGate3/comments/17e0ien/how_did_gale_get_the_orb/#:~:text=From%20the%20wiki%3A%20,an%20extremely%20destructive%20Netherese%20orb). Erudite and charming, he speaks as a scholar might, even as he grapples with the ticking time-bomb of magic within. Gale seeks a solution to remove or dissipate the orb – whether through ancient artifacts like the Crown of Karsus or Mystra’s mercy – all while proving his worth as a hero and perhaps atoning for his hubris.
+  level: 3
+  attributes:
+    health: 90
+    mana: 120
+  items: ["ravaged_beach:gale_scroll", "baldurs_gate:karsus_journal"] # Gale carries magical scrolls, and later perhaps Karsus' journal for his quest
+  quests: ["baldurs_gate:wizard_of_waterdeep"] # Gale's personal quest about the orb and Mystra's task
+- id: laezel
+  keywords: ["lae'zel", "githyanki", "fighter", "gith"]
+  name: "Lae'zel"
+  description: |
+    A battle-hardened Githyanki warrior with green skin and a permanent scowl of impatience. Lae’zel was trained among the merciless ranks of Vlaakith’s knights. Proud and direct, she initially views most non-gith as either useful tools or obstacles. Infected by a tadpole, she is desperate to reach a **githyanki crèche** for purification, believing devoutly in her people’s methods. Over time, her journey forces her to question blind loyalty. Clad in jagged plate and wielding a greatsword, Lae’zel is fearless in combat and abrasive in conversation, but her steadfast honor and courage are undeniable.
+  level: 3
+  attributes:
+    health: 115
+    mana: 30
+  items: ["ravaged_beach:broken_gith_blade"]
+  quests: ["baldurs_gate:the_githyanki_warrior"] # Lae'zel's quest involving the creche and Orpheus/Vlaakith
+- id: shadowheart
+  keywords: ["shadowheart", "cleric", "half-elf", "shar"]
+  name: "Shadowheart"
+  description: |
+    A young half-elf cleric with obsidian hair and haunted eyes, clad in dark leather armor embossed with a black heart. Shadowheart is devoted to **Shar**, the Mistress of the Night, and embarked on a secret mission to deliver a mysterious artefact (the Astral Prism) to Baldur’s Gate for her goddess [oai_citation:24‡bg3.wiki](https://bg3.wiki/wiki/Daughter_of_Darkness#:~:text=,about%20to%20kill%20each%20other). Her memory is partly suppressed by Shar’s design, leaving her unsure of her own past. She’s pragmatic and guarded, struggling between the cruel tenets of Shar and faint inner yearnings of empathy and light. As the party travels, her faith and identity hang in the balance. Will she remain Shar’s loyal disciple and perhaps ascend as a Dark Justiciar, or renounce the darkness for a chance at redemption?
+  level: 3
+  attributes:
+    health: 100
+    mana: 80
+  items: ["ravaged_beach:astral_prism"] # She carries the Astral Prism (Mysterious Artifact)
+  quests: ["shadowfell:daughter_of_darkness"] # Shadowheart's personal quest (her artifact mission and choice between Shar/Selûne)
+- id: wyll
+  keywords: ["wyll", "warlock", "human", "blade of frontiers"]
+  name: "Wyll"
+  description: |
+    A charismatic human warlock with a dashing eye-patch and a hero’s poise. Known as the “Blade of Frontiers,” Wyll is famed for defending the innocent – though the source of his powers is a fiendish secret. He made a pact with the devil **Mizora** in exchange for the power to protect people, sacrificing much of his own freedom. Wyll is noble-hearted and self-sacrificing, but lives under the shadow of Mizora’s whims; for instance, he’s been tasked to hunt a fugitive hellspawn (Karlach), a duty he deeply resents. He practices swordplay alongside magic, weaving eldritch fire with practiced flourishes. Ever eager to live up to his legend, Wyll faces the challenge of breaking or fulfilling his infernal pact without losing himself.
+  level: 3
+  attributes:
+    health: 105
+    mana: 60
+  items: ["emerald_grove:wyll_rapier", "emerald_grove:infernal_amulet"]
+  quests: ["baldurs_gate:blade_of_frontiers"] # Wyll's personal quest (dealing with Mizora, saving refugees, etc.)
+- id: karlach
+  keywords: ["karlach", "tiefling", "barbarian", "infernal engine"]
+  name: "Karlach"
+  description: |
+    A towering Zariel-touched tiefling with ashen skin, fiery orange hair, and a hearty laugh that belies a tragic past. Karlach’s chest is embedded with an **infernal engine**, an iron mechanism replacing her heart that runs hot with rage (and literal heat) [oai_citation:25‡reddit.com](https://www.reddit.com/r/BaldursGate3/comments/1653npq/giant_timeline_of_the_entire_backstory_and_plot/#:~:text=1484%20DR%20%28aprox). Once a slave soldier in the Blood War, she escaped Avernus after years of fighting for the archdevil Zariel. Now free, she is relentlessly hunted by those who sold her to hell (notably Gortash). Despite the engine causing her pain and making physical intimacy dangerous, Karlach is exuberant, compassionate, and revels in simple pleasures of life now regained. She seeks **revenge** on her betrayers and a way to stabilize or cool her engine – **Soul Coins** serve as rare fuel that soothes its overheating. In battle, she’s ferocious; in friendship, fiercely loyal.
+  level: 3
+  attributes:
+    health: 130
+    mana: 20
+  items: ["emerald_grove:hand_axe", "emerald_grove:soul_coin"]
+  quests: ["baldurs_gate:our_forgotten_fury"] # Karlach's personal quest (vengeance on Gortash/Zariel’s bounty and fixing her heart)
+
+# Non-Origin Companions and Allies
+- id: halsin
+  keywords: ["halsin", "druid", "wood elf"]
+  name: "Halsin"
+  description: |
+    A broad-shouldered wood elf druid with kind eyes and a painted bear paw on his cheek. Halsin is the First Druid of the Emerald Grove, devoted to Silvanus. Wise, patient, and powerful, he was captured by goblins while investigating the shadow curse. Once freed, Halsin offers guidance and aid to the party. He seeks to lift the Shadow-Curse afflicting the lands, having witnessed Ketheric’s devastation firsthand a century ago. Halsin can shapechange into a bear, and indeed embodies a protector’s heart – nurturing yet fierce when his kin or nature are threatened. Now free of his captors, he’s determined to right the wrongs that have spread from the grove to the Shadow-Cursed lands.
+  level: 5
+  attributes:
+    health: 150
+    mana: 100
+  items: ["emerald_grove:halsins_journal"]
+  quests: ["shadowfell:lift_the_curse"] # Halsin's quest to end the shadow curse
+- id: jaheira
+  keywords: ["jaheira", "harper", "half-elf", "druid"]
+  name: "Jaheira"
+  description: |
+    A legendary half-elf druid, one of the oldest surviving Harpers, with streaks of gray in her hair and resolve etched into her face. Jaheira fought in historic battles a century ago and now leads the Harper resistance at Last Light Inn. Stern but caring, she carries the weight of loss and experience, mentoring younger allies. In combat she wields nature’s magic and a club, summoning storms and strikes with equal deftness. Jaheira’s reputation precedes her – even Ketheric Thorm remembers crossing blades with her. Though age has made her pragmatic, her dedication to balance and the greater good burns bright as ever. She stands ready to finish the fight against the Dead Three’s plot and protect her beloved city once more.
+  level: 7
+  attributes:
+    health: 180
+    mana: 120
+  items: ["last_light:harper_pin", "last_light:jaheiras_staff"]
+  quests: [] # Jaheira might not have a personal quest beyond the main war effort
+- id: minsc
+  keywords: ["minsc", "ranger", "human", "boo"]
+  name: "Minsc"
+  description: |
+    A hulking, bald human ranger with a purple facial tattoo and an oversized personality. Minsc is a hero of Baldur’s Gate from days past, resurrected (quite literally) into the current crisis. Cheerful to a fault and slightly unhinged, he converses with his pet hamster **“Boo”** whom he believes to be a Miniature Giant Space Hamster and constant source of advice. Minsc’s motto is to “Go for the eyes!” of evil. Though some see him as a fool, those who have fought alongside Minsc know his bravery and kindness are unparalleled. He has little patience for planning but an endless zeal for smashing villains. Reuniting with Jaheira and new heroes, Minsc is ready to once again **butt-kick for goodness!**
+  level: 6
+  attributes:
+    health: 170
+    mana: 30
+  items: ["baldurs_gate:two_handed_sword"]
+  quests: [] # Minsc joins late; no separate quest besides aiding in finale
+- id: orpheus
+  keywords: ["orpheus", "githyanki", "prince"]
+  name: "Prince Orpheus"
+  description: |
+    A proud githyanki male with a regal bearing and psionic power emanating from his very presence. Orpheus is the son of Gith, prophesied to liberate his people from the lich-queen Vlaakith’s tyranny. Imprisoned within the Astral Prism, he has remained in eternal stasis to keep the Emperor’s tadpoles and the Absolute’s control at bay [oai_citation:26‡forgottenrealms.fandom.com](https://forgottenrealms.fandom.com/wiki/Astral_Prism#:~:text=The%20Astral%20Prism%20functioned%20as,1). Orpheus appears in resplendent gith armor, cape billowing with psychic energy. Though captured, his mind remains sharp and unbroken. He values honor and freedom above all. Once freed, Orpheus faces a destiny-defining choice: take up the mantle of leadership for the githyanki and possibly sacrifice himself (or be sacrificed) to stop the Elder Brain. His calm, commanding voice carries centuries of wisdom and burden.
+  level: 8
+  attributes:
+    health: 200
+    mana: 150
+  items: []
+  quests: ["baldurs_gate:free_orpheus"] # Quest related to freeing Orpheus / Orphic Hammer usage
+
+# Antagonists (Dead Three Chosen and other villains)
+- id: ketheric
+  keywords: ["ketheric", "thorm", "myrkul", "necromancer", "general"]
+  name: "General Ketheric Thorm"
+  description: |
+    A towering armored figure with pallid complexion and cold, fanatical eyes. Ketheric Thorm is a former Selûnite paladin-turned-necromancer and the Chosen of **Myrkul** [oai_citation:27‡forgottenrealms.fandom.com](https://forgottenrealms.fandom.com/wiki/Ketheric_Thorm#:~:text=General%20Ketheric%20Thorm%20was%20a,1). Once driven by the loss of his daughter **Isobel**, he bargained with Shar and then Myrkul to resurrect her, losing his soul in the process. Now effectively undead, Ketheric commands legions of zombies, skeletons, and shadow-cursed beings from **Moonrise Towers**. He is nearly invincible thanks to the **Nightsong**, a captured Selûnite aasimar whose life force anchors his immortality [oai_citation:28‡en.wikipedia.org](https://en.wikipedia.org/wiki/Baldur%27s_Gate_3#:~:text=conscripts%2C%20and%20Harpers,the%20Sword%20Coast%20by%20manipulating). In battle, Ketheric fights with a massive black maul and dark magic, mocking the futile efforts of those who oppose the Absolute. Only by freeing or killing the Nightsong can he be made vulnerable. Beneath layers of contempt and zealotry, a flicker of grief remains, but it’s long buried under Myrkul’s decay.
+  level: 10
+  attributes:
+    health: 500
+    mana: 300
+  items: ["moonrise:netherstone_myrkul", "moonrise:thorms_emblem"]
+  quests: [] # Ketheric is primarily a target in main quest
+- id: orin
+  keywords: ["orin", "bhaal", "assassin", "shapeshifter"]
+  name: "Orin the Red"
+  description: |
+    A lithe, red-haired woman with an unsettling grin and a dagger always in hand. Orin is the Chosen of **Bhaal**, a **changeling Bhaalspawn** assassin who delights in murder and mayhem [oai_citation:29‡forgottenrealms.fandom.com](https://forgottenrealms.fandom.com/wiki/Orin#:~:text=Orin%20the%20Red%20was%20a,2). She can shape-shift into the guise of others – appearing as friends, allies, or even innocents – only to revel in the bloody confusion when she strikes. As the cult’s chief enforcer of chaos, Orin has been orchestrating serial killings in Baldur’s Gate, performing gruesome murders as ritual offerings to her dark father. Her demeanor swings from seductive and playful to violently deranged. In her private lair beneath the city (the Temple of Bhaal), she prowls like a predator, toying with victims (even abducting one of the party’s dear companions to lure them in). Once confronted, Orin discards her disguises and may assume the monstrous **Slayer form** – a horrific, clawed abomination – to prove herself the ultimate predator. She lives for the moment of the kill and dreams of bathing the world in anarchy and blood for Bhaal.
+  level: 10
+  attributes:
+    health: 400
+    mana: 150
+  items: ["baldurs_gate:orin_nethetstone", "baldurs_gate:bhaalist_knife"]
+  quests: [] # Orin is an antagonist to defeat in main quest
+- id: gortash
+  keywords: ["gortash", "enver", "bane", "tyrant"]
+  name: "Lord Enver Gortash"
+  description: |
+    A suave human male in lavish attire, exuding confidence and cruelty in equal measure. Enver Gortash is the Chosen of **Bane** and an architect of the Absolute’s plan [oai_citation:30‡bg3.wiki](https://bg3.wiki/wiki/Enver_Gortash#:~:text=Lord%20Enver%20Gortash,main%20antagonists%20in%20%2013). Once a commoner with a gift for manipulation, he climbed to high society in Baldur’s Gate through machinations and betrayals. Gortash has invented the **Steel Watchers** – formidable construct guards powered by infernal engines – to enforce his will on the city. Declaring himself Archduke, he intends to institute a tyrannical rule under Bane’s "perfect order." Ever the politician, he initially treats the party as pieces on his gameboard, proposing alliances or truces if it benefits him. He carries himself with theatrical charm, addressing foes as “dear friends” before detonating a hidden explosive. He wears a specialized gauntlet that doubles as a remote control for his automata and a focus for defensive spells. In confrontation, Gortash prefers to let his **followers and machines** fight for him while he strategizes from afar [oai_citation:31‡bg3.wiki](https://bg3.wiki/wiki/Enver_Gortash#:~:text=and%20rising%20through%20the%20ranks,the%20palm%20of%20his%20hand). He is a mastermind who fears genuine personal combat – but cornered, he reveals a desperate, vicious side. Gortash’s ultimate goal is dominion over Baldur’s Gate and beyond, and he will gladly shackle the masses to achieve his vision of order.
+  level: 10
+  attributes:
+    health: 350
+    mana: 200
+  items: ["baldurs_gate:netherstone_bane", "baldurs_gate:steel_watch_control"]
+  quests: []
+- id: the_emperor
+  keywords: ["emperor", "dream visitor", "illithid", "balduran"]
+  name: "The Emperor Illithid"
+  description: |
+    A mind flayer with regal poise and piercing intelligence in its alien eyes. **The Emperor** presents itself with refinement, draped in elaborate robes, tentacles twitching thoughtfully rather than menacingly. This illithid is unlike the feral brutes of its kind – it retains the memories and personality of **Balduran**, the hero who founded Baldur’s Gate [oai_citation:32‡forgottenrealms.fandom.com](https://forgottenrealms.fandom.com/wiki/Balduran#:~:text=Balduran%20was%20a%20legendary%20seafaring,1). After being captured and ceremorphosed by mind flayers long ago, Balduran (now the Emperor) broke free from the Elder Brain’s control when he came into contact with the Astral Prism, gaining autonomy. Cunning, pragmatic, and often manipulative, the Emperor acted as the party’s **Dream Visitor**, guiding them through telepathic visions under the guise of a protector. Its true motives are its own survival and freedom, which it insists align with defeating the Absolute. The Emperor can be a valuable ally – possessing extensive knowledge of psionics and the Dead Three’s scheme – but it demands trust on its terms. It is always calculating whether sticking with the party or siding with the Absolute best secures its fate [oai_citation:33‡forgottenrealms.fandom.com](https://forgottenrealms.fandom.com/wiki/Balduran#:~:text=As%20a%20mind%20flayer%2C%20the,1). In battle, the Emperor wields formidable psionic powers: mind blasts, domination, and teleportation. It carries a symbiotic tadpole that it uses to communicate and influence. Depending on the party’s choices, the Emperor can fight alongside them as a reluctant hero or become a devastating adversary if it feels betrayed. Its ultimate desire is to see a world where **free-willed illithids** like itself can exist without gods or masters – even if that means it must become a new master.
+  level: 12
+  attributes:
+    health: 300
+    mana: 300
+  items: []
+  quests: [] # The Emperor is primarily involved in main plot (no separate quest; choice-dependent)
+- id: elder_brain
+  keywords: ["elder brain", "the absolute", "brain"]
+  name: "The Elder Brain (Absolute)"
+  description: |
+    A gargantuan, pulsating brain submerged in brine, with countless nerve-like tentacles sprawling outward. This is the **Elder Brain**, codenamed “The Absolute” by the cult – a massive amalgamation of mind flayer consciousness elevated to god-like sentience. Enslaved by the Crown of Karsus and Netherstones, it was bent to the will of the Dead Three’s Chosen [oai_citation:34‡bg3.wiki](https://bg3.wiki/wiki/Crown_of_Karsus#:~:text=Three%20Netherstones%20were%20removed%20from,information%20read%20The%20Dark%20Urge), but beneath that yoke it plots for its own dominance. It speaks directly into the minds of those around it with a chorus of tempting voices, promising unity and enlightenment. The Elder Brain’s chamber is suffused with its mental aura – reality itself warps under its psychic gravity. In combat, it unleashes devastating psionic blasts, mind dominations that turn allies against each other, and summons tadpole-thralls from its pool to do its bidding. The Brain’s only weakness is the **Netherstones** – when all three are wielded by an illithid, the Crown’s control can be wrested or broken [oai_citation:35‡bg3.wiki](https://bg3.wiki/wiki/Crown_of_Karsus#:~:text=Netherbrain%20%20in%20Act%20Three,defeat%20%2088%20The%20Netherbrain) [oai_citation:36‡bg3.wiki](https://bg3.wiki/wiki/Crown_of_Karsus#:~:text=Three%20Netherstones%20were%20removed%20from,information%20read%20The%20Dark%20Urge). Once vulnerable, it can be physically destroyed… or enthroned under a new Absolute. As the culmination of the Grand Design, the Elder Brain represents a potential end of free will on the Sword Coast if not stopped. Its motivations are cold intellect and an insatiable hunger to expand the mind flayer colony – unless someone chooses to seize that power for themselves.
+  level: ?? # Boss of the game, effectively a world-state entity
+  attributes:
+    health: 1000
+    mana: 1000
+  items: ["morphic:netherstone_triad"] # Representing the integrated Netherstones/Crown during final battle
+  quests: []

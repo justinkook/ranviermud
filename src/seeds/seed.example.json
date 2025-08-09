@@ -1,0 +1,20 @@
+{
+  "world": {
+    "title": "Neverwinter Nights",
+    "tone": "adventurous, character-driven",
+    "synopsis": "A party of unlikely allies venture forth from the city, struggling with personal goals and a looming threat."
+  },
+  "characters": [
+    { "name": "Tav", "traits": ["curious", "brave"], "summary": "The player character, decisive yet thoughtful." },
+    { "name": "Shadowheart", "traits": ["secretive", "wry"], "summary": "A cleric with a guarded past." },
+    { "name": "Astarion", "traits": ["charming", "cunning"], "summary": "A rogue with a razor smile and sharper intentions." }
+  ],
+  "canon": {
+    "references": [
+      "https://baldursgate.fandom.com/",
+      "https://forgottenrealms.fandom.com/"
+    ]
+  }
+}
+
+

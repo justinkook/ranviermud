@@ -1,0 +1,49 @@
+title: "Underdark"
+metadata:
+  atmosphere: "dark, bioluminescent cavern network deep underground"
+rooms:
+  - id: entry
+    name: "Underdark Entrance"
+    description: |
+      You step into a vast cavern illuminated by luminescent fungi clinging to stalactites. The air is damp and strangely luminescent spores float gently. Bioluminescent moss paints the cavern in hues of blue and purple. A narrow stone ledge spirals downward, where you can make out the silhouette of a Myconid colony in the distant gloom. The surface world feels very far away.
+    exits:
+      - direction: up
+        name: "Selune Shrine Exit"
+        to: "goblin_camp:shrine_of_night"
+      - direction: down
+        name: "To Mushroom Colony"
+        to: "underdark:myconid_colony"
+    npcs: ["underdark:glut", "underdark:myconid_sovereign"] # Myconid characters near entry
+  - id: myconid_colony
+    name: "Myconid Colony Grove"
+    description: |
+      A forest of giant mushrooms and fungal tendrils spreads across a damp cavern floor. Phosphorescent caps cast a soft glow on clusters of Myconids silently tending to fungal blooms. The air is thick with spores, and a peaceful psychic humming resonates in your mind – the communal thoughts of the Myconid colony. There is a palpable sense of harmony here, disturbed only by distant metallic echoes from deeper tunnels.
+    exits:
+      - direction: south
+        name: "Towards Grymforge"
+        to: "underdark:grymforge_bridge"
+      - direction: up
+        name: "Toward Surface"
+        to: "underdark:entry"
+    npcs: ["underdark:spaw", "underdark:myconid_sovereign"] # Myconid sovereign and spaw companions
+  - id: grymforge_bridge
+    name: "Grymforge Bridge"
+    description: |
+      The cavern opens into a magma-lit expanse. A massive stone bridge spans a lake of glowing lava, leading to the Duergar stronghold of Grymforge. The heat is oppressive, and the clank of metal on stone rings out rhythmically. On the far side, an imposing adamantine forge can be glimpsed, surrounded by dark dwarves (Duergar) laboring under the watch of a fiery guardian statue. The path forward radiates both promise and danger.
+    exits:
+      - direction: north
+        name: "Myconid Garden"
+        to: "underdark:myconid_colony"
+      - direction: south
+        name: "Grymforge"
+        to: "underdark:grymforge_forge"
+    npcs: ["underdark:duergar_guard", "underdark:traggor"] # A duergar guard patrols the bridge, Traggor a slaver
+  - id: grymforge_forge
+    name: "The Adamantine Forge"
+    description: |
+      At the cavern’s fiery heart lies an ancient forge built into a lava pool. Enormous adamantine hammer mechanisms tower overhead, poised to smite heated metal. The Duergar have reactivated this legendary **Adamantine Forge**, and its guardian – a hulking elemental golem of molten metal – stands vigilant. Scorching heat and the roar of flames dominate the senses. Here, with the right mithral ore and molds, one could craft items of incredible quality amid great peril.
+    exits:
+      - direction: north
+        name: "To Bridge"
+        to: "underdark:grymforge_bridge"
+    npcs: ["underdark:grym_guardian", "underdark:elder_duergar"] # The forge guardian and a duergar taskmaster

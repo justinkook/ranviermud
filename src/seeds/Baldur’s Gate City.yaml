@@ -1,0 +1,49 @@
+title: "Baldur's Gate (Lower City)"
+metadata:
+  atmosphere: "busy urban streets under looming threat, day and night cycle"
+rooms:
+  - id: basilisk_gate
+    name: "Basilisk Gate"
+    description: |
+      The southern gate of Baldur's Gate bustles with activity. **Flaming Fist** mercenaries in red cloaks control the flow of traffic, checking refugees and merchants before allowing passage. Beyond the gate, the Lower City’s cobbled streets and tightly packed stone buildings stretch out, alive with the cries of hawkers and brine from the Chionthar River. An air of tension underlies the usual clamor, as rumors of cult killings and steel watchers put citizens on edge.
+    exits:
+      - direction: north
+        name: "Lower City Square"
+        to: "baldurs_gate:lower_city_square"
+      - direction: south
+        name: "Wyrm's Crossing (to outer city)"
+        to: "world:wyrms_crossing"
+    npcs: ["baldurs_gate:flaming_fist_guard", "baldurs_gate:refugee"] # Guards at the gate and incoming refugees
+  - id: lower_city_square
+    name: "Lower City Marketplace"
+    description: |
+      A broad square filled with market stalls and chattering crowds, flanked by taverns and shops. An ornate fountain depicting Balduran’s ship stands in the center, though its water runs murky. **Steel Watcher** constructs – imposing metal guardians – patrol here, their metal footsteps echoing. Townsfolk cast nervous glances at them. The smell of fresh bread from a bakery mixes with the river’s aroma. To the west, the towering silhouette of **Wyrm’s Rock Fortress** (Gortash’s seat) looms over the neighborhood.
+    exits:
+      - direction: east
+        name: "Elfsong Tavern"
+        to: "baldurs_gate:elfsong"
+      - direction: south
+        name: "To Basilisk Gate"
+        to: "baldurs_gate:basilisk_gate"
+      - direction: north
+        name: "Manorborn (Upper City Gate)"
+        to: "baldurs_gate:manorborn_gate"
+    npcs:
+      [
+        "baldurs_gate:steel_watcher",
+        "baldurs_gate:vendor",
+        "baldurs_gate:citizen",
+      ]
+  - id: elfsong
+    name: "Elfsong Tavern"
+    description: |
+      A cozy tavern with dim lighting and a melancholic air. Patrons huddle over ale and stew at wooden tables. The famous spectral **Elfsong** quietly fills the air – the haunting voice of an unseen elven spirit lamenting a lost lover, a tune every local knows. In a corner booth, **Minsc** (a burly ranger with a tiny hamster on his shoulder) regales an audience with wild adventure tales, while **Jaheira** and other allies plan next moves upstairs in a private room. The bartender eyes newcomers with a mix of hospitality and caution – these days, trust is scarce in Baldur’s Gate.
+    exits:
+      - direction: west
+        name: "Market Square"
+        to: "baldurs_gate:lower_city_square"
+    npcs: [
+        "baldurs_gate:minscc",
+        "baldurs_gate:bartender",
+        "baldurs_gate:assassin",
+      ] # Minsc (if present), and a lurking assassin perhaps

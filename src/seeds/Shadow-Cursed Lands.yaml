@@ -1,0 +1,28 @@
+title: "Shadow-Cursed Lands"
+metadata:
+  atmosphere: "eternal twilight, cursed oppressive gloom"
+rooms:
+  - id: crossroads
+    name: "Shadowlands Crossroads"
+    description: |
+      A once-fertile plain now lies under an eerie twilight. Gnarled trees and ashen grass line a crossroads marked by a broken signpost. The very air is filled with a murky haze; stepping too far from the lantern-light here causes tendrils of living shadow to curl at your legs, leeching life and hope. The distant silhouette of Moonrise Towers looms to the west, barely visible through the gloom.
+    exits:
+      - direction: west
+        name: "To Moonrise Towers"
+        to: "moonrise:entry"
+      - direction: east
+        name: "Last Light Inn"
+        to: "last_light:main_hall"
+    npcs: ["shadowlands:harpers_patrol"] # Harper rangers keeping lanterns at crossroads
+  - id: mausoleum
+    name: "Thorm Mausoleum"
+    description: |
+      Set off from the road is a gated family mausoleum, its iron door creaked open. Inside, the crypt of the Thorm family descends into darkness. The air is stale. Faded engravings depict a radiant Selûnite priestess alongside a stern-looking warrior – Isobel and Ketheric Thorm. A secret passage yawns where a sarcophagus lies askew, leading down to **ancient Sharran vaults** where light dares not tread.
+    exits:
+      - direction: out
+        name: "Back to Crossroads"
+        to: "shadowlands:crossroads"
+      - direction: down
+        name: "Into Gauntlet of Shar"
+        to: "shadowfell:shar_gate"
+    npcs: ["shadowlands:balthazar", "shadowlands:undead_warrior"] # Balthazar (necromancer) lurks here, with undead

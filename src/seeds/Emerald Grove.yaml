@@ -1,0 +1,37 @@
+title: "Emerald Grove"
+metadata:
+  atmosphere: "verdant druid sanctuary, tense with internal conflict"
+rooms:
+  - id: outer_gate
+    name: "Grove Outer Gate"
+    description: |
+      Massive oak-and-vine gates bar the entrance to the Emerald Grove. Outside, the forest clearing bears signs of a recent skirmish – goblin arrows and bloodstains on the dirt path. Two tiefling guards stand wary at the threshold, beyond which a lush enclave beckons with ancient trees and stone idols.
+    exits:
+      - direction: south
+        name: "Forest Trail"
+        to: "ravaged_beach:forest_path"
+      - direction: north
+        name: "Inner Grove"
+        to: "emerald_grove:inner_sanctum"
+    npcs: ["emerald_grove:zevlor", "emerald_grove:arna"] # Tiefling leader Zevlor guarding gate
+  - id: inner_sanctum
+    name: "Druid Grove Interior"
+    description: |
+      Sunlight beams through a circular opening in the canopy, illuminating a tranquil grove encircled by mossy ruins. Refugee tents and makeshift shelters line the edges where tieflings huddle. In the center, a sacred pool and an ancient oak altar serve as the druids’ gathering spot. The air is thick with incense and tension – whispers of an ongoing ritual echo from a cave leading deeper under the oak.
+    exits:
+      - direction: south
+        name: "Grove Gate"
+        to: "emerald_grove:outer_gate"
+      - direction: east
+        name: "Sacred Pool Cave"
+        to: "emerald_grove:ritual_chamber"
+    npcs: ["emerald_grove:halsin", "emerald_grove:kagha", "emerald_grove:rat"] # Archdruid Halsin (if rescued), Kagha the acting leader
+  - id: ritual_chamber
+    name: "Sacred Pool Chamber"
+    description: |
+      A torch-lit cavern opens around a clear pool shimmering with emerald light. Druids’ chanting reverberates off stone walls etched with druidic runes. Kagha’s ritual to "purify" the grove is underway here. Vines creep along the floor toward a crack where faint sunlight trickles in. The atmosphere is heavy with magic and foreboding – something ancient stirs in the water’s reflection.
+    exits:
+      - direction: west
+        name: "Back to Grove"
+        to: "emerald_grove:inner_sanctum"
+    npcs: ["emerald_grove:kagha", "emerald_grove:shadow_druid"] # Kagha and her mentor's presence during the ritual

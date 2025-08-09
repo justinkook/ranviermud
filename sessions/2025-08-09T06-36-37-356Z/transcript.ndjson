@@ -1,0 +1,2 @@
+{"t":"2025-08-09T06:36:37.371Z","type":"output","text":"Provider: local\nCommands: help, chapter, save, narrate <text>, note <text>, bookmark <label>, research <query>, canon <query>, export-chapters, reload-canon, reload-seed, set-seed <absPath>, quit\nNumeric choices: type 1..N to pick from the last AI-suggested choices.\n\nLast choices:\n1. look\n2. inventory\n3. say hello\n4. think"}
+{"t":"2025-08-09T06:36:37.371Z","type":"command","text":"quit"}

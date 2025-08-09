@@ -1,0 +1,26 @@
+# Area: Nautiloid (Mind Flayer ship in prologue) [oai_citation:20‡pcgamesn.com](https://www.pcgamesn.com/baldurs-gate-3/lore#:~:text=It%20is%20very%20clearly%20a,is%20where%20the%20game%20begins)
+title: "Nautiloid Ship"
+metadata:
+  atmosphere: "dim, fleshy interior of an alien ship in Avernus"
+rooms:
+  - id: bridge
+    name: "Nautiloid Bridge"
+    description: |
+      Organic matter and machinery merge on the Nautiloid's bridge. The walls pulse as if alive, lit by an eerie cerulean glow. A control console of chitinous design stands here, oozing brine. Through a cracked viewport, the fiery skies of Avernus are visible outside. The air smells of brimstone and blood.
+    exits:
+      - direction: down
+        name: "Translocation Chamber"
+        to: "nautiloid:translocation_room"
+    npcs: ["nautiloid:us", "nautiloid:intellect_devourer"] # A friendly Intellect Devourer ally named 'Us'
+  - id: translocation_room
+    name: "Translocation Chamber"
+    description: |
+      A flesh-lined pod chamber used for teleportation (translocation) of thralls. Twitching tendrils line the walls, and several pod-like cages hang open, one still containing a withered cultist. The floor is slick with viscous fluid. Faint screams echo from within the ship’s depths, underscoring the Nautiloid’s otherworldly horror.
+    exits:
+      - direction: up
+        name: "Bridge"
+        to: "nautiloid:bridge"
+      - direction: out
+        name: "Escape Portal"
+        to: "ravaged_beach:crash_site"
+    npcs: ["nautiloid:mind_flayer_captain"] # Mind flayer encountered during escape

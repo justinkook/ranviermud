@@ -1,0 +1,28 @@
+title: "Ravaged Beach"
+metadata:
+  atmosphere: "daylight, coastal wreckage with smoke on the horizon"
+rooms:
+  - id: crash_site
+    name: "Nautiloid Crash Site"
+    description: |
+      The smoking wreck of the Nautiloid lies half-submerged in the sand. Tentacle-like ship appendages are strewn across a beach littered with debris and bodies. Gulls cry overhead and salt spray mixes with the stench of burnt flesh. Among the wreckage, a few survivors stir, dazed from the impact.
+    exits:
+      - direction: east
+        name: "Forest Path"
+        to: "ravaged_beach:forest_path"
+      - direction: west
+        name: "Coast (South)"
+        to: "ravaged_beach:south_coast"
+    npcs: ["ravaged_beach:shadowheart", "ravaged_beach:us"] # Shadowheart starts near here
+  - id: forest_path
+    name: "Forest Path"
+    description: |
+      A winding path leads from the beach into a sparse coastal forest. Sunlight filters through charred pine trees. The ground shows signs of struggle: footprints, blackened grass, and broken branches. In the distance, faint voices and the crackling of a small campfire can be heard deeper in the woods.
+    exits:
+      - direction: west
+        name: "Back to Beach"
+        to: "ravaged_beach:crash_site"
+      - direction: north
+        name: "Emerald Grove Gate"
+        to: "emerald_grove:outer_gate"
+    npcs: ["ravaged_beach:laezel"] # Lae'zel trapped in a cage nearby (encounter)

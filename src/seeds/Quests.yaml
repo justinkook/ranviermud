@@ -1,0 +1,115 @@
+# Act 1 Main Quest: Find a Cure (covers Emerald Grove and Moonrise path)
+- id: find_a_cure
+  title: "Find a Cure for the Parasite"
+  level: 1
+  description: |
+    You carry a mind flayer parasite in your brain. It hasn’t turned you yet, but time is short. Find a way to remove or control the tadpole before you become a mind flayer.
+    1. **Escape the Nautiloid:** Survive the crash and regroup with other survivors [oai_citation:51‡en.wikipedia.org](https://en.wikipedia.org/wiki/Baldur%27s_Gate_3#:~:text=The%20protagonist%20wakes%20up%20inside,all%20likewise%20implanted%20with%20tadpoles).
+    2. **Seek Help at the Grove:** Investigate the nearby druid grove for a healer. You learned a high druid named Halsin might know of a cure.
+    3. **Resolve the Grove’s Crisis:** The grove’s healers won’t assist while under threat. Decide the conflict between the tiefling refugees and the goblin cultists (side with the grove or the Absolute).
+    4. **Pursue the Leads:** Halsin (if found) directs you towards Moonrise Towers, suspecting the cult there has answers. Alternatively, goblin leaders mention Moonrise and a “True Soul” ritual. Proceed through either the Mountain Pass or Underdark to reach Moonrise.
+  goals:
+    - type: QuestGoal
+      config:
+        target: "emerald_grove:inner_sanctum"
+        title: "Find a healer at Emerald Grove"
+    - type: QuestGoal
+      config:
+        target: "goblin_camp:inner_sanctum"
+        title: "Confront or join the goblin leaders"
+    - type: QuestGoal
+      config:
+        target: "shadowlands:crossroads"
+        title: "Reach Moonrise Towers"
+  rewards:
+    - type: ExperienceReward
+      config:
+        amount: 500
+
+# Act 2 Main Quest: Shadow Curse and Moonrise
+- id: shadow_curse
+  title: "Journey through the Shadows"
+  level: 4
+  description: |
+    Moonrise Towers lies beyond a land cursed in eternal darkness. With Halsin/Jaheira’s guidance, find refuge and allies in the Shadow-Cursed Lands, and weaken Ketheric Thorm’s immortality.
+    1. **Last Light Inn:** Find the safe haven run by the Harpers. Protect Isobel, whose Selûnite powers keep the darkness at bay.
+    2. **Lift the Shadow-Curse (optional):** Help Halsin investigate the source of the curse in the ruins of Reithwin. (Confront the cursed Thorm family spirits, delve into the Thorm Mausoleum).
+    3. **Gauntlet of Shar:** Enter Shar’s temple via Thorm’s mausoleum to find the Nightsong. Overcome Shar’s trials and decide the Nightsong’s fate [oai_citation:52‡en.wikipedia.org](https://en.wikipedia.org/wiki/Baldur%27s_Gate_3#:~:text=conscripts%2C%20and%20Harpers,the%20Sword%20Coast%20by%20manipulating).
+    4. **Confront Ketheric:** Armed with the Nightsong’s fate (either her freedom, making Ketheric mortal, or her death, empowering Shadowheart), assault Moonrise Towers. Defeat Ketheric Thorm and claim his Netherstone [oai_citation:53‡en.wikipedia.org](https://en.wikipedia.org/wiki/Baldur%27s_Gate_3#:~:text=cohorts%E2%80%94Orin%20the%20Red%20,Ketheric%20and%20claims%20his%20Netherstone).
+  goals:
+    - type: QuestGoal
+      config:
+        target: "last_light:main_hall"
+        title: "Reach Last Light Inn"
+    - type: QuestGoal
+      config:
+        target: "shadowfell:shar_gate"
+        title: "Explore the Gauntlet of Shar"
+    - type: QuestGoal
+      config:
+        target: "moonrise:throne_room"
+        title: "Defeat Ketheric Thorm"
+  rewards:
+    - type: ExperienceReward
+      config:
+        amount: 1000
+
+# Act 3 Main Quest: The Final Assault
+- id: absolute_bane
+  title: "Confront the Absolute"
+  level: 7
+  description: |
+    The cult’s leaders regroup in Baldur’s Gate. Orin and Gortash hold the remaining Netherstones. You must stop their tyrannical plans and assemble the crown to challenge the Elder Brain.
+    1. **Investigate Baldur’s Gate:** Navigate the Lower City under Gortash’s martial law. Meet with allies (e.g., Flaming Fist loyalists, Duke Ravengard if found, etc.). Uncover Orin’s murder targets and Gortash’s schemes.
+    2. **Disable the Steel Watch:** Discover the Steel Watch Foundry and either destroy it or enlist the Gondian engineers to sabotage Gortash’s constructs, weakening his grip on the city.
+    3. **Deal with the Chosen:** Decide whom to confront first – **Lord Gortash** at Wyrm’s Rock or **Orin** in the Temple of Bhaal. (Be wary: if you delay Orin, she might execute her hostage.) Defeat each to obtain their Netherstone [oai_citation:54‡en.wikipedia.org](https://en.wikipedia.org/wiki/Baldur%27s_Gate_3#:~:text=The%20protagonist%20arrives%20at%20Baldur%27s,triumvirate%20and%20the%20protagonist%27s%20every).
+    4. **The Choice of the Emperor:** The Emperor reveals its true identity and the captive Orpheus [oai_citation:55‡en.wikipedia.org](https://en.wikipedia.org/wiki/Baldur%27s_Gate_3#:~:text=It%20is%20revealed%20that%20the,Emperor%20comes%20to%20the%20rescue). Choose to either trust the Emperor (keeping Orpheus bound) or free Orpheus (possibly turning the Emperor against you) before the final battle.
+    5. **Final Battle – The Netherbrain:** With all three Netherstones, storm the Brain’s location beneath the city. Use an Illithid ally to activate the Crown of Karsus and *Karsus’ Compulsion* [oai_citation:56‡bg3.wiki](https://bg3.wiki/wiki/Crown_of_Karsus#:~:text=Netherbrain%20%20in%20Act%20Three,defeat%20%2088%20The%20Netherbrain). Battle the Elder Brain and its defenders. Decide to destroy it or control it.
+  goals:
+    - type: QuestGoal
+      config:
+        target: "baldurs_gate:lower_city_square"
+        title: "Navigate Baldur's Gate under the Absolute's influence"
+    - type: QuestGoal
+      config:
+        target: "baldurs_gate:manorborn_gate"
+        title: "Neutralize Gortash's Steel Watch"
+    - type: QuestGoal
+      config:
+        target: "baldurs_gate:elfsong"
+        title: "Defeat Orin and Gortash, claim the Netherstones"
+    - type: QuestGoal
+      config:
+        target: "morphic:brain_chamber"
+        title: "Confront and resolve the Elder Brain"
+  rewards:
+    - type: ExperienceReward
+      config:
+        amount: 2000
+
+# Side Quest Example: Save the Emerald Grove (Branching Act I outcome)
+- id: save_the_grove
+  title: "Save the Refugees"
+  level: 2
+  description: |
+    The druid grove harbors tiefling refugees but faces an assault by goblin cultists of the Absolute. You can help **defend the grove** or turn against it.
+    - **Defender path:** Recruit allies (Wyll, Halsin) and fortify the grove. Defeat the three goblin leaders (Priestess Gut, Minthara, Dror Ragzlin) to break the siege.
+    - **Assault path (evil):** Side with Minthara. Quietly remove tiefling leaders (like Zevlor), then lead the goblins to slaughter the grove. Beware: some companions (Wyll, Karlach) will oppose you.
+    Outcome: The grove’s fate is decided. Survivors (if any) will affect your journey (e.g., tieflings possibly aiding in Act 3 if saved).
+  goals:
+    - type: QuestGoal
+      config:
+        target: "goblin_camp:inner_sanctum"
+        title: "Eliminate the goblin leadership OR aid them"
+    - type: QuestGoal
+      config:
+        target: "emerald_grove:inner_sanctum"
+        title: "Ensure the grove’s ultimate safety or destruction"
+  rewards:
+    - type: ExperienceReward
+      config:
+        amount: 300
+    - type: ReputationReward
+      config:
+        faction: "Emerald Grove"
+        change: 50 # increase or decrease based on outcome

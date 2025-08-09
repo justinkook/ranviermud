@@ -1,0 +1,25 @@
+title: "Last Light Inn"
+metadata:
+  atmosphere: "island of light in the darkness, fortified inn"
+rooms:
+  - id: main_hall
+    name: "Last Light Inn Main Hall"
+    description: |
+      Warm torchlight and the smell of hearty stew welcome travelers into this sturdy roadside inn. Wards of glowing runes are etched on every door and window, keeping the lethal curse at bay. Refugees and scouts huddle at wooden tables, speaking in hushed hopeful tones. At the bar, the innkeeper, a stout halfling, polishes glasses. **Jaheira** and a few **Flaming Fist** guards study a map spread over a table, coordinating efforts against the darkness.
+    exits:
+      - direction: west
+        name: "Into the Shadows"
+        to: "shadowlands:crossroads"
+      - direction: upstairs
+        name: "Guest Rooms"
+        to: "last_light:guest_room"
+    npcs: ["last_light:jaheira", "last_light:isobel", "last_light:flaming_fist"] # Jaheira and Isobel are here protecting the inn
+  - id: guest_room
+    name: "Guest Chambers"
+    description: |
+      A small but comfortable chamber lit by an oil lamp infused with Selûnite magic. The pale light pushes back the gloom seeping through a shuttered window. A feather bed and a sturdy chest offer rare comfort in these lands. You notice scratch marks on the wooden floor near the bed – as if heavy furniture was hastily moved to block the door at some point. Nonetheless, for now, this room is a sanctuary where one might actually rest.
+    exits:
+      - direction: downstairs
+        name: "Inn Common Room"
+        to: "last_light:main_hall"
+    npcs: []

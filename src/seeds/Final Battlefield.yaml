@@ -1,0 +1,14 @@
+title: "Morphic Pool (Elder Brain's Lair)"
+metadata:
+  atmosphere: "otherworldly brain chamber, pulsing with psionic energy"
+rooms:
+  - id: brain_chamber
+    name: "Elder Brain's Pool"
+    description: |
+      A vast cavernous chamber lies deep beneath the city, its walls fleshy and veined with glowing purple neural pathways. In the center is a colossal pool of briny fluid, and from it rises the **Elder Brain** – a gargantuan pulsating brain with tentacles submerged in viscous liquid. Electrical arcs and psionic pulses emanate from it, distorting the very air. The floor surrounding the pool is dotted with glowing Netherese runes forming a large circle where the Crown of Karsus hovers above the water, just out of reach [oai_citation:21‡bg3.wiki](https://bg3.wiki/wiki/Crown_of_Karsus#:~:text=Netherbrain%20%20in%20Act%20Three,defeat%20%2088%20The%20Netherbrain). Two stone platforms stand at opposite sides of the pool, accessible by narrow walkways, where **brain-controlled thralls** and any remaining Chosen make their last stand. This is the heart of the Absolute – a place of nightmarish clarity and unfathomable power.
+    exits: []
+    npcs: [
+        "morphic:elder_brain",
+        "morphic:thrall_general",
+        "morphic:the_emperor",
+      ] # The Elder Brain itself (boss), thralls, and possibly The Emperor (if turned)

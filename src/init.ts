@@ -59,7 +59,8 @@ export async function initGameState() {
   GameState.AccountManager.setLoader(GameState.EntityLoaderRegistry.get('accounts'));
   GameState.PlayerManager.setLoader(GameState.EntityLoaderRegistry.get('players'));
 
-  const BundleManager = new Ranvier.BundleManager(path.join(root, 'bundles'), GameState);
+  // Ensure trailing slash for compatibility with Ranvier's BundleManager path concatenation
+  const BundleManager = new Ranvier.BundleManager(path.join(root, 'bundles') + '/', GameState);
   GameState.BundleManager = BundleManager;
   await BundleManager.loadBundles();
   GameState.ServerEventManager.attach(GameState.GameServer);

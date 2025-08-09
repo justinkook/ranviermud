@@ -1,0 +1,90 @@
+- id: astral_prism
+  name: "Astral Prism (Mysterious Artefact)"
+  type: OBJECT
+  keywords: ["artifact", "prism", "astral", "prison"]
+  roomDesc: "a black icosahedral artifact etched with infernal runes lies here"
+  description: |
+    An obsidian 20-sided prism inscribed with glowing gith runes and infernal sigils. This *Mysterious Artifact* hums with psionic energy. It serves as both a **prison and a pocket-plane**; inside, Prince Orpheus is trapped in eternal stasis. The Prism projects an aura that **suppresses illithid control**, shielding its bearer from mind flayer domination [oai_citation:37‡forgottenrealms.fandom.com](https://forgottenrealms.fandom.com/wiki/Astral_Prism#:~:text=The%20Astral%20Prism%20functioned%20as,1). It was forged from an unholy deal between Vlaakith and an archdevil eons ago. While carried, it gently pulsates in sync with the wielder’s heartbeat. This is the very artifact the cult of the Absolute fears – a bane to the Elder Brain’s plans and a key to unleashing Orpheus.
+  script: null
+  metadata:
+    rarity: legendary
+    value: 0
+    plotItem: true
+- id: illithid_tadpole
+  name: "Illithid Tadpole"
+  type: OBJECT
+  keywords: ["parasite", "tadpole", "mind flayer larvae"]
+  roomDesc: "a wriggling translucent tadpole in a small jar is here"
+  description: |
+    A tiny, translucent parasite curled in fluid – a **mind flayer tadpole**. It twitches occasionally, showing a flash of needle-like teeth. When implanted in a host’s eye, this larvae burrows into the brain to initiate **ceremorphosis** (transformation into an illithid). However, these particular tadpoles are modified with Netherese magic, granting the host latent **psionic abilities** without immediate transformation. Using it (often inadvertently) can awaken powers like telepathy, mind blast, or domination in the infected individual, but risks bringing them closer to the Elder Brain’s influence. It’s both a source of **power** and a ticking time-bomb for anyone infected.
+  metadata:
+    rarity: uncommon
+    value: 1
+    usable: false # Not a typical "usable" item in inventory, more a plot device
+- id: soul_coin
+  name: "Soul Coin"
+  type: OBJECT
+  keywords: ["coin", "soul coin", "infernal"]
+  roomDesc: "a heavy iron coin engraved with infernal script is here"
+  description: |
+    A palm-sized coin of cold iron, surprisingly heavy for its small size. Its faces bear infernal script and a leering devil face. Faint whispers emanate from it, and touching it floods your mind with **rage and despair** [oai_citation:38‡bg3.wiki](https://bg3.wiki/wiki/Soul_Coin#:~:text=Soul%20Coins%20are%20small%2C%20coin,currency%20in%20the%20Nine%20Hells). Each Soul Coin contains a damned mortal soul, bound as currency in the Nine Hells. Devils prize them for bargains, and devices like Karlach’s infernal engine can **consume** them for a boost of power (or relief) – the soul’s essence burns away, fueling hellish machinery or empowering infernal magic. Though valuable to the fiends, to most others it is a grim curiosity… or a temptation.
+  metadata:
+    rarity: rare
+    value: 100
+    usage: "Can be given to certain NPCs (e.g., Raphael's deal) or used by Karlach to cool her engine."
+- id: orphic_hammer
+  name: "Orphic Hammer"
+  type: WEAPON
+  keywords: ["hammer", "warhammer", "orphic"]
+  roomDesc: "an ominous infernal-metal warhammer rests here, faintly glowing"
+  description: |
+    A legendary Warhammer forged of black **infernal iron** and inscribed with runes of oathbreaking. The head of the hammer resembles a snarling devil’s visage. Known as the Orphic Hammer, it carries a +3 enchantment [oai_citation:39‡bg3.wiki](https://bg3.wiki/wiki/Orphic_Hammer#:~:text=The%20Orphic%20Hammer%20is%20a,on%20saving%20throws%20vs%20spells). **Special Property:** When brought down upon magical bonds or barriers, the hammer *“Unshackles”* – it can **shatter even infernal contracts and crystal prisons** [oai_citation:40‡bg3.wiki](https://bg3.wiki/wiki/Orphic_Hammer#:~:text=,within%20the%20House%20of%20Hope). This is the only artifact capable of freeing Prince Orpheus from the Astral Prism’s binding magic [oai_citation:41‡bg3.wiki](https://bg3.wiki/wiki/Orphic_Hammer#:~:text=,within%20the%20House%20of%20Hope). In combat, its strikes are thunderous: one-handed it deals 1d8+3 bludgeoning, two-handed 1d10+3 [oai_citation:42‡bg3.wiki](https://bg3.wiki/wiki/Orphic_Hammer#:~:text=One), and it grants its wielder Advantage on spell saving throws [oai_citation:43‡bg3.wiki](https://bg3.wiki/wiki/Orphic_Hammer#:~:text=Image%3A%20Orphic%20Hammer%20image) (the hammer thrums with protective magic against hostile sorcery). A faint pulse can be felt when it’s near its purpose – almost as if the hammer knows it was created as the **insurance policy** for a devil’s bargain, waiting centuries for the right hand to claim it.
+  metadata:
+    quality: legendary
+    slot: "wield"
+    damage: "1d8+3/1d10+3 bludgeoning"
+    effect: "Spell Resistance (Advantage on saves vs spells) [oai_citation:44‡bg3.wiki](https://bg3.wiki/wiki/Orphic_Hammer#:~:text=The%20Orphic%20Hammer%20is%20a,on%20saving%20throws%20vs%20spells)"
+    special: "Unshackling Strike – destroys binding spells and infernal crystals"
+- id: netherstone_myrkul
+  name: "Ketheric's Netherstone"
+  keywords: ["netherstone", "myrkul", "orb"]
+  roomDesc: "a dull black gem-like stone emanating dread lies here"
+  description: |
+    A fist-sized stone that looks like solid shadow given form, cold to the touch. This **Netherstone** is one of three taken from the Crown of Karsus [oai_citation:45‡bg3.wiki](https://bg3.wiki/wiki/Crown_of_Karsus#:~:text=Three%20Netherstones%20were%20removed%20from,information%20read%20The%20Dark%20Urge). It thrums with the power of death and decay – unsurprising as it was attuned to Myrkul’s servant. While held, it grants visions of endless tombs and whispers in your mind, urging you to let all things die. In game mechanics, the Netherstone itself isn’t a weapon but a **key plot item**: when all three Netherstones are united and placed into the Crown, the bearer can exert control over the Elder Brain (or free it) [oai_citation:46‡bg3.wiki](https://bg3.wiki/wiki/Crown_of_Karsus#:~:text=Three%20Netherstones%20were%20removed%20from,information%20read%20The%20Dark%20Urge). Individually, each Netherstone holds immense energy from ancient Netheril; some say a Netherstone could amplify certain spells or rituals if one knew how. This particular stone was pried from Ketheric Thorm’s gauntlet upon his defeat – a triumph and a warning of the power still needed to overcome the Absolute.
+  metadata:
+    rarity: legendary
+    value: 0
+    plotItem: true
+- id: crown_of_karsus
+  name: "Crown of Karsus"
+  keywords: ["crown", "karsus", "netherese"]
+  roomDesc: "an ornate golden crown set with three empty socket grooves is here"
+  description: |
+    A magnificent golden crown floating gently above your hands, as if resisting being held. Its design is ancient yet intact, with swirling Netherese script along the band. Three empty recesses are spaced evenly around it – clearly where the **Netherstones** once sat [oai_citation:47‡bg3.wiki](https://bg3.wiki/wiki/Crown_of_Karsus#:~:text=Three%20Netherstones%20were%20removed%20from,information%20read%20The%20Dark%20Urge). Created by the archwizard Karsus of Netheril, this artifact supposedly granted the power of a god to its user [oai_citation:48‡bg3.wiki](https://bg3.wiki/wiki/Crown_of_Karsus#:~:text=The%20Crown%20of%20Karsus%20was,defeat%20%2088%20The%20Netherbrain). In the context of the Absolute, the Crown is invulnerable and acts as the **focal point to control the Elder Brain** when charged with the Netherstones [oai_citation:49‡bg3.wiki](https://bg3.wiki/wiki/Crown_of_Karsus#:~:text=Netherbrain%20%20in%20Act%20Three,defeat%20%2088%20The%20Netherbrain). On its own, the crown is currently inert – a dormant titan. But even now, touching it fills one’s mind with a flood of Weave energy and a taste of godlike insight. If the Netherstones are returned and an illithid wearer channels Orpheus’ psionic power through it, the Crown could bend the will of the most powerful of minds… or perhaps even challenge the gods again. It is the penultimate prize coveted by Gale and others who crave ultimate power.
+  metadata:
+    rarity: artifact
+    value: 0
+    plotItem: true
+- id: infernal_engine
+  name: "Infernal Engine Heart"
+  keywords: ["infernal engine", "engine", "heart"]
+  roomDesc: "a fist-sized metal and crystal engine hums here, warm to the touch"
+  description: |
+    This complex device of interlocking infernal iron plates and glowing ember crystals is actually **Karlach’s heart**, removed. The **Infernal Engine** thumps with a fiery rhythm, and the air around it shimmers from the heat. Originally built as a prototype by Zariel’s war smiths (with Enver Gortash’s input) to power the infernal war machines and the Steel Watchers [oai_citation:50‡reddit.com](https://www.reddit.com/r/BaldursGate3/comments/1653npq/giant_timeline_of_the_entire_backstory_and_plot/#:~:text=1484%20DR%20%28aprox), it was implanted in Karlach as both a power source and a cruel experiment. The engine runs hot on damned soul energy; it makes Karlach immensely strong (granting her supernatural rage in battle) but risks burning her up from within. When supplied with **Soul Coins**, it temporarily cools, venting a harmless gout of flame as it stabilizes. This engine-heart symbolizes Karlach’s struggle: built for war and destruction, now fighting for freedom and life. If reinstalled or kept, it could power extraordinary machinery… or serve as proof that even devices of evil can be turned to righteous purpose.
+  metadata:
+    rarity: unique
+    value: 0
+    plotItem: true
+    effect: "Grants enhanced strength and flaming attacks when in a host; overheats without cooling."
+- id: nightsong_spear
+  name: "Spear of Night"
+  keywords: ["spear", "nightsong", "selune", "shar"]
+  type: WEAPON
+  roomDesc: "a slender spear of dark metal, its tip radiating darkness, lies here"
+  description: |
+    A delicate-looking spear forged from an alloy of **shadow essence** and silver. Despite its elegance, it emanates a palpable aura of gloom. Known as the Spear of Night, it was created by Shar’s followers as both a weapon and a ritual instrument to sacrifice the Nightsong (Aylin). Its tip seems to absorb light; even daylight appears to dim in its presence. Mechanically, it’s a +1 spear that deals an additional necrotic bite on hit. In lore, only by this spear’s point could the Nightsong be truly harmed. After the events in the Gauntlet of Shar, the spear’s fate depends on the party’s choice: it might be empowered by Selûnite magic if Aylin is spared (turning it into the **Blood of Lathander** mace in some paths) or remain a Shar-blessed bane of light if used for murder. As it stands, it’s a symbol of the party’s pivotal choice – destruction or salvation of a beacon of light.
+  metadata:
+    rarity: rare
+    slot: "wield"
+    damage: "1d6+1 piercing"
+    effect: "On hit: +1d4 necrotic damage in darkness"

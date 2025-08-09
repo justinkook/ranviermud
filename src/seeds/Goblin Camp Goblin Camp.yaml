@@ -1,0 +1,44 @@
+title: "Goblin Camp"
+metadata:
+  atmosphere: "befouled ruins teeming with goblins and cultists"
+rooms:
+  - id: courtyard
+    name: "Goblin Camp Courtyard"
+    description: |
+      A once-hallowed temple courtyard now serves as a ramshackle camp. Goblin tents, crude totems, and smoldering cookfires clutter the flagstones. Filthy goblins, drow, and cultists mill about under garlands of grinning skulls. A statue of Selûne lies toppled at the center, its head replaced by crude graffiti of a lidless eye – the mark of the Absolute.
+    exits:
+      - direction: north
+        name: "Sanctum Entrance"
+        to: "goblin_camp:inner_sanctum"
+      - direction: south
+        name: "Forest Path"
+        to: "ravaged_beach:forest_path"
+    npcs: ["goblin_camp:priestess_gut", "goblin_camp:sazza"] # Gut preaches in courtyard, Sazza (captive goblin) possibly here
+  - id: inner_sanctum
+    name: "Shattered Sanctum"
+    description: |
+      Inside the desecrated temple, torchlight dances across shattered stained-glass murals. The goblin leaders hold court here: a foul altar drips with blood at the far end, backlit by green flame. Stone pillars, cracked and defaced, line the hall, and prisoners whimper in makeshift cages. The stench of death and offal is overpowering – this sacred place has become a throne room for the Absolute’s minions.
+    exits:
+      - direction: south
+        name: "Courtyard"
+        to: "goblin_camp:courtyard"
+      - direction: down
+        name: "Temple Basement"
+        to: "goblin_camp:shrine_of_night"
+    npcs: [
+        "goblin_camp:minthara",
+        "goblin_camp:dror",
+        "goblin_camp:priestess_gut",
+      ] # Three goblin leaders gather here
+  - id: shrine_of_night
+    name: "Defiled Selûnite Shrine"
+    description: |
+      Beneath the sanctum lies a forgotten shrine to Selûne. Once serene, it’s now a sacrificial chamber. Faint moon symbols are gouged out on the walls. In the center, a dark stone altar is littered with sacrificial knives and congealed blood. Whispered prayers to a corrupted “Absolute” echo here. A tunneled exit to the Underdark lies hidden behind heavy stone doors, marked by an illegible prayer.
+    exits:
+      - direction: up
+        name: "Upper Temple"
+        to: "goblin_camp:inner_sanctum"
+      - direction: east
+        name: "Underdark Waypoint"
+        to: "underdark:entry"
+    npcs: ["goblin_camp:abdirak"] # A devout Absolute cultist lingering near the altar

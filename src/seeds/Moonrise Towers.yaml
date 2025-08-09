@@ -1,0 +1,37 @@
+title: "Moonrise Towers"
+metadata:
+  atmosphere: "besieged dark stronghold, seat of cult power"
+rooms:
+  - id: entry
+    name: "Moonrise Courtyard"
+    description: |
+      The once-grand entry to Moonrise Towers is now a battlefield of light and dark. Its courtyard stones are cracked, with weeds and shadowy tendrils creeping through. Undead soldiers stand guard alongside Absolute cultists. The sky overhead swirls with unnatural shadow despite no roof – the curse is stronger here. Across the yard, the main doors of Moonrise stand open, an invitation and a warning.
+    exits:
+      - direction: east
+        name: "Shadow-Cursed Lands"
+        to: "shadowlands:crossroads"
+      - direction: north
+        name: "Moonrise Keep"
+        to: "moonrise:throne_room"
+    npcs: ["moonrise:undead_guard", "moonrise:cultist"]
+  - id: throne_room
+    name: "Moonrise Throne Room"
+    description: |
+      This great hall once served as Ketheric Thorm’s audience chamber. Now it is draped in the iconography of the Absolute: eye motifs and slimy, pulsing veins crawling up the walls. At the far end, Ketheric’s massive armored form stands before an altar, green-glowing **Netherstone** in hand. Pews and benches lie smashed, and pools of shadow-coagulated blood stain the marble floor. The presence of undeath is overwhelming – an inky darkness flickers around Ketheric, protecting him until the source of his immortality is dealt with.
+    exits:
+      - direction: south
+        name: "Courtyard"
+        to: "moonrise:entry"
+      - direction: down
+        name: "Prison Cells"
+        to: "moonrise:prison"
+    npcs: ["moonrise:ketheric", "moonrise:zrell"] # Ketheric and his disciple Z'rell present until fight
+  - id: prison
+    name: "Moonrise Dungeon"
+    description: |
+      Below the tower lies a ring of dank prison cells. Wards against teleportation flicker fitfully on the stone walls. In one cell, a githyanki princeling with regal bearing (**Prince Orpheus**) is held behind a barrier of crackling magic, chained by glowing crystals. In other cells, desiccated corpses and gibbering survivors attest to Moonrise’s horrors. A teleport sigil in the center of the hall stands inert – likely the means by which Ketheric’s allies escaped with their prize.
+    exits:
+      - direction: up
+        name: "Throne Room"
+        to: "moonrise:throne_room"
+    npcs: ["moonrise:orpheus", "moonrise:mind_flayer", "moonrise:cult_prisoner"] # Orpheus is here until freed via Astral Prism
